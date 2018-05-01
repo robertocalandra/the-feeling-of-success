@@ -1,0 +1,14 @@
+Z:
+Lowest: 0.09
+Fairly high: 0.42
+
+X:
+Center: 0.6
+Towards computer: 0.86
+Towards robot: 0.37
+
+Y:
+Center: -0.05
+Towards outside: -0.30
+Towards computers: 0.19
+

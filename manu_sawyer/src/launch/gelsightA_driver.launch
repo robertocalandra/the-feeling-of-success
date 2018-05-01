@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="gelsightA" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="1280" />
+    <param name="image_height" value="960" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="framerate" value="30" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+<!-- see https://github.com/bosch-ros-pkg/usb_cam/blob/6293035f3437653dcd24c60f7ac6231e3887cabe/nodes/usb_cam_node.cpp for option list -->
+<!-- Not sure if these are actually getting applied.  It prints out warnings related to them. -->
+    <param name="autoexposure" value="false"/>
+    <param name="exposure" value="0.005" /> 
+    <param name="auto_white_balance" value="false"/>
+<!--     <param name="white_balance" value="-1"/>-->
+  </node>
+  <node name="image_view_A" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="/gelsightA/image_raw"/>
+    <param name="autosize" value="true" />
+  </node>
+</launch>

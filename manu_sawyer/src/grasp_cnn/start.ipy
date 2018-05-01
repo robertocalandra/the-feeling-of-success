@@ -1,0 +1,16 @@
+
+import matplotlib as mpl
+mpl.use('Agg')
+
+import aolib.areload; aolib.areload.enable()
+%load_ext autoreload
+%autoreload 2
+# For caffe
+import sys
+# hide caffe output
+if '-h' in sys.argv[1:]:
+   import os
+   os.environ['GLOG_minloglevel'] = '2'
+
+import numpy as np, pylab, aolib.util as ut, aolib.img as ig
+

@@ -1,0 +1,5 @@
+numpy
+dotmap
+matplotlib
+scipy
+h5py

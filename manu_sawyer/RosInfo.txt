@@ -1,0 +1,4 @@
+To add devel to source: . ~/catkin_ws/devel/setup.bash
+     then, catkin_make
+
+To view nodes and stuff: rosrun rqt_graph rqt_graph

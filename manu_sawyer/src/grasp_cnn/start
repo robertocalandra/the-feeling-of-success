@@ -1,0 +1,2 @@
+#!/bin/bash
+ipython start.ipy -i -- $*

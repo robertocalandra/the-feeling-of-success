@@ -1,0 +1,19 @@
+
+# The five calibration points in the Kinect coordinate system
+p_1_kinect = np.array([0.2430977, 0.08286079, 0.62421233]).reshape((3, 1))
+p_2_kinect = np.array([-0.21222512, 0.08257368, 0.61546346]).reshape((3, 1))
+p_3_kinect = np.array([0.22151346, -0.22452401, 0.93467556]).reshape((3, 1))
+p_4_kinect = np.array([-0.22365152, -0.21754953, 0.92477081]).reshape((3, 1))
+p_5_kinect = np.array([-0.00227722, -0.09801589, 0.80091135]).reshape((3, 1))
+
+# The five corresponding calibration points in the Sawyer coordinate system
+# p_1 is in the bottom left corner from the computer facing the robot
+p_1_sawyer = np.array([0.843183726766, -0.261815126937, 0.0455590419168]).reshape((3, 1))
+# p_2 is in the bottom right corner from the computer facing the robot
+p_2_sawyer = np.array([0.839926577688, 0.170350066241, 0.0455282716249]).reshape((3, 1))
+# p_3 is in the top left corner from the computer facing the robot
+p_3_sawyer = np.array([0.40931661688, -0.265741867857, 0.045578159045]).reshape((3, 1))
+# p_4 is in the top right corner from the computer facing the robot
+p_4_sawyer = np.array([0.408132053271,  0.167204225895, 0.0455695328147]).reshape((3, 1))
+# p_5 is the mid point
+p_5_sawyer = np.array([0.589429323552, -0.0405393060661,  0.0466802171036]).reshape((3, 1))
